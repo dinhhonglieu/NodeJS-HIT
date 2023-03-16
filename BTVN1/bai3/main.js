@@ -6,9 +6,13 @@ let users = [
     { id: 123, name: 'Chi', age: 8, role: 'user' },
    ];
    
-let array = Object.entries(users);
-console.log(array);
 
-let array2 = Object.values(users);
-console.log(array2);
+let Arr = [];
+let a = users.length;
+for (let i = 0; i< a; i++) {
+    let obj = {};
+    obj[users[i].id] = users[i];
+    Arr.push(obj);
+}
    
+console.log(Arr);
