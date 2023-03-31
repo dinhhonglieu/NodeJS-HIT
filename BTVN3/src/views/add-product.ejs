@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/add_product.css">
+    <title>Document</title>
+    <style>
+        table{
+            border: 0.5px solid #000;
+        }
+        td{
+            width: 20%;
+            border-right: 0.5px solid black;
+        }
+        td:nth-last-child(1){
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <%- include("./header.ejs") %>
+    </div>
+    <form action="#">
+       <table>
+        <tr>
+            <td>
+                <label for="">Title</label>
+            </td>
+            <td>
+                <label for="">Price</label>
+            </td>
+            <td>
+                <label for="">Description</label>
+            </td>
+            <td>
+                <label for="">
+                    Image
+                </label>
+            </td>
+            <td>
+                <label for="">Rating</label>
+            </td>
+        </tr>
+       </table>
+    </form>
+    <div class="foot">
+        <%- include("./footer.ejs") %>
+    </div>
+</body>
+</html>
