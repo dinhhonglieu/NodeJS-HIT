@@ -23,7 +23,8 @@
     <div class="head">
         <%- include("./header.ejs") %>
     </div>
-    <form action="#">
+    <!-- <form action="#">
+
        <table>
         <tr>
             <td>
@@ -45,6 +46,33 @@
             </td>
         </tr>
        </table>
+    </form> -->
+    <form  method="POST" action="/add-product" >
+        <table>
+            <tr>
+                <td><label for="">Title:</label></td>
+                <td><input name="title" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Price:</label></td>
+                <td><input name="price" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Description:</label></td>
+                <td><input name="description" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Image:</label></td>
+                <td><input name="image" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="">Rating:</label></td>
+                <td><input name="rating" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit ">Add product</button></td>
+            </tr>
+        </table>
     </form>
     <div class="foot">
         <%- include("./footer.ejs") %>
